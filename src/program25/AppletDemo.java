@@ -1,5 +1,5 @@
 /*Write a program that creates a Banner and then creates a thread to scrolls the message in the
-  banner from left to right across the applet’s window.*/
+  banner from left to right across the applets window.*/
 
 package program25;
 
