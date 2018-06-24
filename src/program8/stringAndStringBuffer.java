@@ -1,3 +1,6 @@
+/*Write a program that show working of different functions of String and StringBufferclasss like
+  setCharAt(, setLength(), append(), insert(), concat()and equals().*/
+
 package program8;
 
 public class stringAndStringBuffer {

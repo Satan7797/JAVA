@@ -1,3 +1,7 @@
+/*Write a program to show the difference between public and private access specifiers. The
+  program should also show that primitive data types are passed by value and objects are passed
+  by reference and to learn use of final keyword*/
+
 package program12;
 
 class specifiers {

@@ -1,3 +1,6 @@
+/*To find the sum of any number of integers entered as 
+  command line arguments*/
+
 package program1;
 public class CommandLine {
 	public static void main(String[] args) {

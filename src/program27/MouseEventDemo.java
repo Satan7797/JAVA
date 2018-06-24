@@ -1,3 +1,6 @@
+/*Write a program to demonstrate different mouse handling events like mouseClicked(),
+  mouseEntered(), mouseExited(), mousePressed, mouseReleased() and mouseDragged().*/
+
 package program27;
 
 import java.awt.*;

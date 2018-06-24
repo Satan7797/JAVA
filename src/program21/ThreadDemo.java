@@ -1,3 +1,5 @@
+/*Write a program to demonstrate priorities among multiple threads.*/
+
 package program21;
  
 class ThreadDemo extends Thread

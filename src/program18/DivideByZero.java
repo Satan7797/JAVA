@@ -1,3 +1,6 @@
+/*Write a program “DivideByZero” that takes two numbers a and b as input, computes a/b, and
+  Invokes Arithmetic Exception to generate a message when the denominator is zero.*/
+
 package program18;
 
 import java.util.Scanner;

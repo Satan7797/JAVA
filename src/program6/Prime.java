@@ -1,3 +1,6 @@
+/*To check if a number is prime or not, by taking the number as 
+  input from the keyboard*/
+
 package program6;
 import java.util.Scanner;
 

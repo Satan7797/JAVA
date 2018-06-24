@@ -1,3 +1,6 @@
+/*To find the sum of any number of integers interactively, i.e., entering every number 
+  from the Keyboard, whereas the total number of integers is given as a command line argument*/
+
 package program7;
 
 public class sumOfNumbers{

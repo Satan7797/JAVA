@@ -1,3 +1,5 @@
+/*Write a program to generate a window without an applet window using main() function.*/
+
 package program29;
 
 import java.awt.*;

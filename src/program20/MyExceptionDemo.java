@@ -1,3 +1,6 @@
+/*Write a program to create your own exception types to handle situation specific to your
+  application (Hint: Define a subclass of Exception which itself is a subclass of Throwable).*/
+
 package program20;
 
 class MyException extends Exception{

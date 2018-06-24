@@ -1,3 +1,6 @@
+/*Write a program to demonstrate multithread communication by implementing synchronization
+  among threads (Hint: you can implement a simple producer and consumer problem).*/
+
 package program22;
 
 class Q{

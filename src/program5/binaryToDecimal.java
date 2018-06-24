@@ -1,3 +1,4 @@
+/*To convert a decimal to binary number.*/
 package program5;
 
 public class binaryToDecimal{

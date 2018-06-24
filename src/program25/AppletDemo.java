@@ -1,3 +1,6 @@
+/*Write a program that creates a Banner and then creates a thread to scrolls the message in the
+  banner from left to right across the applet’s window.*/
+
 package program25;
 
 import java.applet.*;

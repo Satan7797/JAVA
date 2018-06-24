@@ -1,3 +1,5 @@
+/*To learn use of in case of a two dimensional array*/
+
 package program4;
 public class twoDimensionalArray{
    public static void main(String[] args){

@@ -1,3 +1,6 @@
+/*Write a program to show the use of static functions and to pass variable length arguments in a
+ Function.*/
+
 package program13;
 
 class staticDemo {

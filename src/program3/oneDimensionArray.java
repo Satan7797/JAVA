@@ -1,3 +1,5 @@
+/*To learn use of single dimensional array by defining the array dynamically.*/
+
 package program3;
 
 public class oneDimensionArray{
