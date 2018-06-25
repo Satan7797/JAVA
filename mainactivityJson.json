@@ -16,6 +16,10 @@
 {
 "program":"Links",
 "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/linksJSON.json"
-}
+},
+  {
+    "program":"example",
+    "url":"https://www.facebook.com"
+  }
 ]
 }
