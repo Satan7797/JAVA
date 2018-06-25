@@ -1,33 +1,21 @@
 {
-   "type":"MainactivityCollection",
-   "mainactivity":[
-      {
-         "type":"Mainactivity",
-         "properties":{
-            "subject":"Java",
-            "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/javaJSON.json"
-         }
-      },
-      {
-         "type":"Mainactivity",
-         "properties":{
-            "subject":"C++",
-            "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/cppJSON.json"
-         }
-      },
-      {
-         "type":"Mainactivity",
-         "properties":{
-            "subject":"Discrete Mathematics",
-            "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/discreteJSON.json"
-         }
-      },
-      {
-         "type":"Mainactivity",
-         "properties":{
-            "subject":"Links",
-            "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/linksJSON.json"
-         }
-      }
-   ]
+"type":"MainactivityCollection",
+"programs":[
+{     
+"program":"Java",
+"url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/javaJSON.json"
+},
+{
+"program":"C++",
+"url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/cppJSON.json"
+},
+{
+"program":"Discrete Mathematics",
+"url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/discreteJSON.json"
+},
+{
+"program":"Links",
+"url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/linksJSON.json"
+}
+]
 }
