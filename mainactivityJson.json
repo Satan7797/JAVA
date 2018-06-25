@@ -5,28 +5,28 @@
          "type":"Mainactivity",
          "properties":{
             "subject":"Java",
-            "url":""
+            "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/javaJSON.json"
          }
       },
       {
          "type":"Mainactivity",
          "properties":{
             "subject":"C++",
-            "url":""
+            "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/cppJSON.json"
          }
       },
       {
          "type":"Mainactivity",
          "properties":{
             "subject":"Discrete Mathematics",
-            "url":""
+            "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/discreteJSON.json"
          }
       },
       {
          "type":"Mainactivity",
          "properties":{
             "subject":"Links",
-            "url":""
+            "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/linksJSON.json"
          }
       }
    ]
