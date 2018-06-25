@@ -1,0 +1,33 @@
+{
+   "type":"MainactivityCollection",
+   "mainactivity":[
+      {
+         "type":"Mainactivity",
+         "properties":{
+            "subject":"Java",
+            "url":""
+         }
+      },
+      {
+         "type":"Mainactivity",
+         "properties":{
+            "subject":"C++",
+            "url":""
+         }
+      },
+      {
+         "type":"Mainactivity",
+         "properties":{
+            "subject":"Discrete Mathematics",
+            "url":""
+         }
+      },
+      {
+         "type":"Mainactivity",
+         "properties":{
+            "subject":"Links",
+            "url":""
+         }
+      }
+   ]
+}

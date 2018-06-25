@@ -1,0 +1,66 @@
+{
+"type":"DiscreteCollection",
+"programs":[
+{
+"program":"Program 1",
+"url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Discrete%20Structure/1.cpp"
+},
+{"program":"Program 2",
+"url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Discrete%20Structure/2.cpp"
+},
+{"program":"Program 3",
+"url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Discrete%20Structure/3.cpp"
+},
+{"program":"Program 4",
+"url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Discrete%20Structure/4.cpp"
+},
+{"program":"Program 5",
+"url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Discrete%20Structure/5.cpp"
+},
+{"program":"Program 6",
+"url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Discrete%20Structure/6.cpp"
+},
+{"program":"Program 7",
+"url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Discrete%20Structure/7.cpp"
+},
+{"program":"Program 8",
+"url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Discrete%20Structure/Program%208/Program%208.cpp"
+},
+{"program":"Program 9",
+"url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Discrete%20Structure/Program%209/Program%209.cpp"
+},
+{"program":"Program 10",
+"url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Discrete%20Structure/10.cpp"
+},
+{"program":"Program 11",
+"url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Discrete%20Structure/11.cpp"
+},
+{"program":"Program 12",
+"url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Discrete%20Structure/12.cpp"
+},
+{"program":"Program 13",
+"url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Discrete%20Structure/13.cpp"
+},
+{"program":"Program 14",
+"url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Discrete%20Structure/14/Project1.cpp"
+},
+{"program":"Program 15",
+"url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Discrete%20Structure/15.cpp"
+},
+{"program":"Program 16",
+"url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Discrete%20Structure/16.cpp"
+},
+{"program":"Program 17",
+"url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Discrete%20Structure/17.cpp"
+},
+{"program":"Program 18",
+"url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Discrete%20Structure/18.cpp"
+},
+{"program":"Program 19",
+"url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Discrete%20Structure/19.cpp"
+},
+{"program":"Program 20",
+"url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Discrete%20Structure/20.cpp"
+}
+]
+}
