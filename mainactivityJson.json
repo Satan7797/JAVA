@@ -400,7 +400,7 @@
          ]
       },
       {
-         "topic":"Docs and Contact:",
+         "topic":"Docs:",
          "subject":"Links",
          "list":[
             {
@@ -437,6 +437,27 @@
                "aim":"Java(9th edition)",
                "program":"Book:",
                "url":"https://drive.google.com/open?id=12eX_TvChpyvwl7kiWMy5sBZGAG3xmGr7"
+            }
+         ]
+      },
+      {
+         "topic":"Contacts:",
+         "subject":"Contact Us",
+         "list":[
+            {
+               "aim":"Gmail",
+               "program":"Mail:",
+               "url":"dunationtk@gmail.com"
+            },
+            {
+               "aim":"Instagram",
+               "program":"Social:",
+               "url":"https://www.intagram.com/rajbir_singh_chauhan"
+            },
+            {
+               "aim":"DuNation.tk",
+               "program":"Our Site:",
+               "url":"http://www.dunation.tk"
             }
          ]
       }
