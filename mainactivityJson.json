@@ -443,6 +443,21 @@
                "aim":"Java(9th edition)",
                "program":"Book:",
                "url":"https://drive.google.com/open?id=12eX_TvChpyvwl7kiWMy5sBZGAG3xmGr7"
+            },
+            {  
+               "aim":"Networking(Forouzan)",
+               "program":"Book:",
+               "url":"https://drive.google.com/open?id=1S3TgTlhmpu7lgxi6KyjhpYxdl-9v4IuD"
+            },
+            {  
+               "aim":"Networking(Prentice Hall)",
+               "program":"Book:",
+               "url":"https://drive.google.com/open?id=1kE31HaBZ11HlZsNrYrbwfnihDcahXIV5"
+            },
+            {  
+               "aim":"OS(Siberschatz 8th edition)",
+               "program":"Book:",
+               "url":"https://drive.google.com/open?id=1vkDO3BZtq-Ioa6dU7Ql-y_k5C9eHKB3n"
             }
          ]
       },
