@@ -404,19 +404,19 @@
          "subject":"Links",
          "list":[
             {
+               "aim":"Question Papers",
+               "program":"Book:",
+               "url":"https://drive.google.com/open?id=1gG8kSR6yH0Tqoa0StZtVJ_TWMuef3gwE"
+            },
+            {
+               "aim":"CSA(Lab Practical)",
+               "program":"Practical Solution:",
+               "url":"https://drive.google.com/open?id=1wLC6e13cpj7-Gn54wvFf23nNOhsEcHRP"
+            },
+            {
                "aim":"Discret Structure(Kenneth Rosen)-6th edition",
                "program":"Book:",
                "url":"https://drive.google.com/open?id=1Yg9PsQhMMY_kDPjvXV3YV4sHUSozeIjm"
-            },
-            {
-               "aim":"Discret Structure(Kenneth Rosen)-6th edition",
-               "program":"Solution:",
-               "url":"https://drive.google.com/open?id=1ixPRJklbPw_a24MQm9G7-Lwr7Zz0jnQp"
-            },
-            {
-               "aim":"Discret Structure(Kenneth Rosen)-7th edition",
-               "program":"Solution:",
-               "url":"https://drive.google.com/open?id=1TacDssme1uEBO-TClhxFv3Mh4gTT6MLl"
             },
             {
                "aim":"Discret Structure(Cormen)-3rd edition",
@@ -432,11 +432,6 @@
                "aim":"CSA(Morris Mano)",
                "program":"Book:",
                "url":"https://drive.google.com/open?id=1JzpMoxzyQNiHG0Afe1y0g24uSRYfHh7X"
-            },
-            {
-               "aim":"CSA(Lab Practical)",
-               "program":"Practical Solution:",
-               "url":"https://drive.google.com/open?id=1wLC6e13cpj7-Gn54wvFf23nNOhsEcHRP"
             },
             {
                "aim":"Java(9th edition)",
