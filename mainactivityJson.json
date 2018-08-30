@@ -19,6 +19,11 @@
                "aim":"String reverse(recursion)",
                "program":"Program 3",
                "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/3.cpp"
+            },
+            {
+               "aim":"Stack using Linked List",
+               "program":"Program 4",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/4.cpp"
             }
          ]
      },
