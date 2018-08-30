@@ -9,6 +9,16 @@
                "aim":"Sparse Matrix",
                "program":"Program 1",
                "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/1.cpp"
+            },
+            {
+               "aim":"Power using recursion",
+               "program":"Program 2",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/2.cpp"
+            },
+            {
+               "aim":"String reverse(recursion)",
+               "program":"Program 3",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/3.cpp"
             }
          ]
      },
