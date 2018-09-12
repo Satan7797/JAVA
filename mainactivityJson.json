@@ -29,6 +29,11 @@
                "aim":"Stack using Linked List",
                "program":"Program 4",
                "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/4new.cpp"
+            },
+            {
+               "aim":"Stack using Array",
+               "program":"Program 5",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/5.cpp"
             }
          ]
      },
