@@ -39,6 +39,11 @@
                "aim":"Queue using Linked List",
                "program":"Program 7",
                "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/7.cpp"
+            },
+            {
+               "aim":"Singly Linked List",
+               "program":"Program 10",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/10.cpp"
             }
          ]
      },
