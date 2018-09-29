@@ -1,7 +1,7 @@
 {
    "type":"MainactivityCollection",
    "mainlist":[
-     {
+      {
          "topic":"Practical Solution:",
          "subject":"Data Structure",
          "list":[
@@ -40,7 +40,7 @@
                "program":"Program 7",
                "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/7.cpp"
             },
-	    {
+            {
                "aim":"Queue using Linked List",
                "program":"Program 8",
                "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/8.cpp"
@@ -51,8 +51,8 @@
                "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/10.cpp"
             }
          ]
-     },
-     {
+      },
+      {
          "topic":"Practical Solution:",
          "subject":"Java",
          "list":[
