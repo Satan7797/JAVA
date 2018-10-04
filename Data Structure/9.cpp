@@ -11,7 +11,7 @@ int main()
 	cin>>exp;
 	
 	for(int i=0;i<exp.length();i++)
-	if(exp[i]>=48 && exp[i]<=57)
+	if(isdigit(exp[i]))
 	s.push(exp[i]-'0');
 	else if(exp[i]>=42 && exp[i]<=47)
 	{
@@ -29,6 +29,7 @@ int main()
 					  break;
 			case '/': s.push(b/a);
 					  break;
+			default:  cout<<"\nInvalid character";
 		}
 	}
 	else
