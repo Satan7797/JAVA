@@ -7,43 +7,33 @@
          "list":[
             {
                "aim":"Sparse Matrix",
-               "program":"Program 1",
             },
             {
                "aim":"Power using recursion",
-               "program":"Program 2",
             },
             {
                "aim":"String reverse(recursion)",
-               "program":"Program 3",
             },
             {
                "aim":"Stack using Linked List",
-               "program":"Program 4",
             },
             {
                "aim":"Stack using Array",
-               "program":"Program 5",
             },
             {
                "aim":"Circular Queue",
-               "program":"Program 6",
             },
             {
                "aim":"Queue using Linked List",
-               "program":"Program 7",
             },
 	    {
                "aim":"Adding numbers using Stack",
-               "program":"Program 8",
             },
 	    {
                "aim":"Evaluating postfix Expression",
-               "program":"Program 9",
             },
             {
                "aim":"Singly Linked List",
-               "program":"Program 10",
             }
          ]
      },
