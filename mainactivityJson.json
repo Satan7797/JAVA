@@ -5,6 +5,56 @@
          "topic":"Practical Solution:",
          "subject":"Data Structure",
          "list":[
+            {
+               "aim":"Sparse Matrix",
+               "program":"Program 1",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/1.cpp"
+            },
+            {
+               "aim":"Power using recursion",
+               "program":"Program 2",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/2.cpp"
+            },
+            {
+               "aim":"String reverse(recursion)",
+               "program":"Program 3",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/3.cpp"
+            },
+            {
+               "aim":"Stack using Linked List",
+               "program":"Program 4",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/4new.cpp"
+            },
+            {
+               "aim":"Stack using Array",
+               "program":"Program 5",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/5.cpp"
+            },
+            {
+               "aim":"Circular Queue",
+               "program":"Program 6",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/6.cpp"
+            },
+            {
+               "aim":"Queue using Linked List",
+               "program":"Program 7",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/7.cpp"
+            },
+	    {
+               "aim":"Adding numbers using Stack",
+               "program":"Program 8",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/8.cpp"
+            },
+	    {
+               "aim":"Evaluating postfix Expression",
+               "program":"Program 9",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/9.cpp"
+            },
+            {
+               "aim":"Singly Linked List",
+               "program":"Program 10",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/10.cpp"
+            }
          ]
      },
      {
