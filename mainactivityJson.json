@@ -8,52 +8,42 @@
             {
                "aim":"Sparse Matrix",
                "program":"Program 1",
-               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/"
             },
             {
                "aim":"Power using recursion",
                "program":"Program 2",
-               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/"
             },
             {
                "aim":"String reverse(recursion)",
                "program":"Program 3",
-               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/"
             },
             {
                "aim":"Stack using Linked List",
                "program":"Program 4",
-               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/"
             },
             {
                "aim":"Stack using Array",
                "program":"Program 5",
-               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/"
             },
             {
                "aim":"Circular Queue",
                "program":"Program 6",
-               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/"
             },
             {
                "aim":"Queue using Linked List",
                "program":"Program 7",
-               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/"
             },
 	    {
                "aim":"Adding numbers using Stack",
                "program":"Program 8",
-               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/"
             },
 	    {
                "aim":"Evaluating postfix Expression",
                "program":"Program 9",
-               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/"
             },
             {
                "aim":"Singly Linked List",
                "program":"Program 10",
-               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/"
             }
          ]
      },
