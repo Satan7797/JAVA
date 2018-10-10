@@ -5,36 +5,6 @@
          "topic":"Practical Solution:",
          "subject":"Data Structure",
          "list":[
-            {
-               "aim":"Sparse Matrix"
-            },
-            {
-               "aim":"Power using recursion"
-            },
-            {
-               "aim":"String reverse(recursion)"
-            },
-            {
-               "aim":"Stack using Linked List"
-            },
-            {
-               "aim":"Stack using Array"
-            },
-            {
-               "aim":"Circular Queue"
-            },
-            {
-               "aim":"Queue using Linked List"
-            },
-	    {
-               "aim":"Adding numbers using Stack"
-            },
-	    {
-               "aim":"Evaluating postfix Expression"
-            },
-            {
-               "aim":"Singly Linked List"
-            }
          ]
      },
      {
