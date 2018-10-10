@@ -6,34 +6,34 @@
          "subject":"Data Structure",
          "list":[
             {
-               "aim":"Sparse Matrix",
+               "aim":"Sparse Matrix"
             },
             {
-               "aim":"Power using recursion",
+               "aim":"Power using recursion"
             },
             {
-               "aim":"String reverse(recursion)",
+               "aim":"String reverse(recursion)"
             },
             {
-               "aim":"Stack using Linked List",
+               "aim":"Stack using Linked List"
             },
             {
-               "aim":"Stack using Array",
+               "aim":"Stack using Array"
             },
             {
-               "aim":"Circular Queue",
+               "aim":"Circular Queue"
             },
             {
-               "aim":"Queue using Linked List",
+               "aim":"Queue using Linked List"
             },
 	    {
-               "aim":"Adding numbers using Stack",
+               "aim":"Adding numbers using Stack"
             },
 	    {
-               "aim":"Evaluating postfix Expression",
+               "aim":"Evaluating postfix Expression"
             },
             {
-               "aim":"Singly Linked List",
+               "aim":"Singly Linked List"
             }
          ]
      },
