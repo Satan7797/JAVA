@@ -75,8 +75,9 @@ void OrderedList::deleteHead(){
 		cout<<"\nList is Empty";
 		return;
 	}else{
-		int d=head->info;
+		node *temp=head;
 		head=head->next;
+		delete temp;
 	}
 }
 
@@ -89,6 +90,7 @@ void OrderedList::deleteTail(){
 		for(;temp->next!=tail;temp=temp->next);
 		temp->next=NULL;
 		int d=tail->info;
+		delete tail;
 		tail=temp;
 		cout<<"\nDeleted value: "<<d;
 	}
@@ -137,63 +139,10 @@ void OrderedList::merge(OrderedList &ol){
 	}
 }
 
-OrderedList enterValuesInList(){
+OrderedList enterValuesInList(int k){
 	OrderedList sol;
 	char choice;
 	int x;
-	do{
-		cout<<"\na) Insert value";
-		cout<<"\nb) Delete value";
-		cout<<"\nc) Display";
-		cout<<"\nd) Exit";
-		cout<<"\nEnter your choice: ";
-		cin>>choice;
-		
-		if(choice=='a'){
-			int n;
-			cout<<"\n1. Insert at head";
-			cout<<"\n2. Insert at tail";
-			cout<<"\nEnter your choice: ";
-			cin>>n;
-			
-			if(n==1){
-				cout<<"\nEnter value to be inserted: ";
-				cin>>x;
-				sol.insertAtHead(x);		
-			}else if(n==2){
-				cout<<"\nEnter value to be inserted: ";
-				cin>>x;
-				sol.insertAtTail(x);		
-			}
-		}else if(choice=='b'){
-			int n;
-			cout<<"\n1. Delete from head";
-			cout<<"\n2. Delete from tail";
-			cout<<"\n3. Delete a node";
-			cout<<"\nEnter your choice: ";
-			cin>>n;
-			
-			if(n==1)
-			sol.deleteHead();
-			else if(n==2)
-			sol.deleteTail();
-			else if(n==3)
-			sol.deleteNode();
-		}else if(choice=='c'){
-			cout<<"\nList is: ";
-			sol.display();
-		}else if(choice=='d')
-		break;
-	}while(true);
-	
-	return sol;
-}
-
-int main(){
-	int x;
-	char choice;
-	OrderedList sol=enterValuesInList();
-	
 	do{
 		cout<<"\na) Insertion";
 		cout<<"\nb) Deletion";
@@ -210,12 +159,22 @@ int main(){
 		}else if(choice=='b'){
 			sol.deleteNode();
 		}else if(choice=='c'){
-			OrderedList sol1=enterValuesInList();
+			cout<<"\nMerging "<<k;
+			OrderedList sol1=enterValuesInList(k+1);
 			sol.merge(sol1);
+			cout<<"\nOut from merge "<<k<<endl;
 		}else if(choice=='d'){
 			sol.display();
 		}else if(choice=='e')
 		break;
 	}while(true);
+	
+	return sol;
+}
+
+int main(){
+	int x;
+	char choice;
+	OrderedList sol=enterValuesInList(0);
 	return 0;
 }
