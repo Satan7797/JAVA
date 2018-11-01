@@ -106,7 +106,6 @@ void SLL<T>::deleteNode(T x)
 		cout<<"\nEmpty\n";
 		return;
 	}
-	
 	if(isInList(x))
 	{
 		if(head->info==x)
@@ -115,12 +114,15 @@ void SLL<T>::deleteNode(T x)
 		deleteFromTail();
 		else
 		{
-			node<T> *temp=head;
-			for(;temp->info!=x;temp=temp->next);
-			node<T> *pred=temp->prev;
-			node<T> *desc=temp->next;
-			desc->prev=pred;
-			pred->next=desc;
+			node<T> *temp=head->next;
+			node<T> *pred=head;
+			while(temp->info!=x && temp!=NULL){
+				temp=temp->next;
+				pred=pred->next;
+			}
+			pred->next=temp->next;
+			temp->next->prev=pred;
+			delete temp;
 		}
 	}
 	else
@@ -152,8 +154,8 @@ void SLL<T>::reverse()
 	}
 	
 	node<T> *first=head,*end=tail;
-	int temp;
-	for(;first!=end;first=first->next,end=end->prev)
+	T temp;
+	for(;first->next!=end;first=first->next,end=end->prev)
 	{
 		temp=first->info;
 		first->info=end->info;
@@ -184,25 +186,56 @@ void SLL<T>::display()
 int main()
 {
 	SLL<> s1;
-	cout<<"Add to head:\n";
-	s1.addToHead(1);
-	s1.addToHead(2);
-	s1.addToHead(3);
-	s1.display();
-	cout<<"\nAdd to tail:\n";
-	s1.addToTail(4);
-	s1.addToTail(5);
-	s1.display();
-	cout<<"\nDelete from head:\n";
-	s1.deleteFromHead();
-	s1.display();
-	cout<<"\nDelete from tail:\n";
-	s1.deleteFromTail();
-	s1.display();
-	cout<<"\nDelete node:\n";
-	s1.deleteNode(1);
-	s1.display();
-	cout<<"\nReversing:\n";
-	s1.reverse();
+	char choice;
+	
+	do{
+		cout<<"\na) Insert at head";
+		cout<<"\nb) Insert at tail";
+		cout<<"\nc) Delete from head";
+		cout<<"\nd) Delete from tail";
+		cout<<"\ne) Delete node";
+		cout<<"\nf) Search for value in list";
+		cout<<"\ng) Reverse the list";
+		cout<<"\nh) Display";
+		cout<<"\ni) Exit";
+		cout<<"\nEnter your choice: ";
+		cin>>choice;
+		
+		if(choice=='a'){
+			int x;
+			cout<<"\nEnter value to be inserted: ";
+			cin>>x;
+			s1.addToHead(x);
+		}else if(choice=='b'){
+			int x;
+			cout<<"\nEnter value to be inserted: ";
+			cin>>x;
+			s1.addToTail(x);
+		}else if(choice=='c'){
+			s1.deleteFromHead();
+		}else if(choice=='d'){
+			s1.deleteFromTail();
+		}else if(choice=='e'){
+			int x;
+			cout<<"\nEnter value to be deleted: ";
+			cin>>x;
+			
+			s1.deleteNode(x);
+		}else if(choice=='f'){
+			int x;
+			cout<<"\nEnter value to be searched: ";
+			cin>>x;
+			
+			if(s1.isInList(x))
+				cout<<"\nValue is in the list.";
+			else 
+				cout<<"\nValue not found";
+		}else if(choice=='g'){
+			s1.reverse();
+		}else if(choice=='h'){
+			s1.display();
+		}else if(choice=='i')
+		break;
+	}while(true);
 	return 0;
 }

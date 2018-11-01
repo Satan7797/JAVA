@@ -2,8 +2,7 @@
 using namespace std;
 
 template<class T=int>
-class node
-{
+class node{
 	public:
 		T info;
 		node *next;
@@ -15,27 +14,22 @@ class node
 };
 
 template<class T=int>
-class SLL
-{
+class SLL{
 	node<T> *head,*tail;
 	public:
-		SLL()
-		{
+		SLL(){
 			head=tail=NULL;
 		}
 		
-		bool isEmpty()
-		{
+		bool isEmpty(){
 			return head==NULL;
 		}
 		
-		node<T>* getHead()
-		{
+		node<T>* getHead(){
 			return head;
 		}
 		
-		node<T>* getTail()
-		{
+		node<T>* getTail(){
 			return tail;
 		}
 		
@@ -79,8 +73,7 @@ class SLL
 };
 
 template<class T>
-void SLL<T>::addToHead(T x)
-{
+void SLL<T>::addToHead(T x){
 	if(head==NULL)
 	tail=head=new node<T>(x);
 	else
@@ -88,8 +81,7 @@ void SLL<T>::addToHead(T x)
 }
 
 template<class T>
-void SLL<T>::addToTail(T x)
-{
+void SLL<T>::addToTail(T x){
 	if(head==NULL)
 	tail=head=new node<T>(x);
 	else
@@ -97,10 +89,8 @@ void SLL<T>::addToTail(T x)
 }
 
 template<class T>
-void SLL<T>::deleteFromHead()
-{
-	if(isEmpty())
-	{
+void SLL<T>::deleteFromHead(){
+	if(isEmpty()){
 		cout<<"\nEmpty\n";
 		return;
 	}
@@ -110,10 +100,8 @@ void SLL<T>::deleteFromHead()
 }
 
 template<class T>
-void SLL<T>::deleteFromTail()
-{
-	if(isEmpty())
-	{
+void SLL<T>::deleteFromTail(){
+	if(isEmpty()){
 		cout<<"\nEmpty\n";
 		return;
 	}
@@ -126,22 +114,18 @@ void SLL<T>::deleteFromTail()
 }
 
 template<class T>
-void SLL<T>::deleteNode(T x)
-{
-	if(isEmpty())
-	{
+void SLL<T>::deleteNode(T x){
+	if(isEmpty()){
 		cout<<"\nEmpty\n";
 		return;
 	}
 	
-	if(isInList(x))
-	{
+	if(isInList(x)){
 		if(head->info==x)
-		deleteFromHead();
+			deleteFromHead();
 		else if(tail->info==x)
-		deleteFromTail();
-		else
-		{
+			deleteFromTail();
+		else{
 			node<T> *temp=head->next;
 			node<T> *prev=head;
 			for(;temp->info!=x;temp=temp->next,prev=prev->next);
@@ -236,9 +220,9 @@ void SLL<T>::display()
 	}while(temp!=NULL);
 }
 
-int main()
-{
-	SLL<char> s1;
+
+SLL<> enterValue(int k){
+	SLL<> s1;
 	char choice;
 	do{
 		cout<<"\na) Add to head";
@@ -270,17 +254,27 @@ int main()
 		else if(choice=='g')
 		s1.reverse();
 		else if(choice=='h'){
-			SLL<char> s=s1.concat(s1);
+			cout<<"\nMerge from function "<<k;
+			SLL<> s=s1.concat(enterValue(k+1));
 			cout<<"\nContents of s: ";
 			s.display();
+			cout<<"\nEnd of merge "<<k;
 		}else if(choice=='i'){
-			SLL<char> s=s1.operator +(s1);
+			cout<<"\nMerge from function "<<k;
+			SLL<> s=s1.operator +(enterValue(k+1));
 			cout<<"\nContents of s: ";
 			s.display();
+			cout<<"\nEnd of merge: "<<k;
 		}else if(choice=='j')
 		s1.display();
 		else if(choice=='k')
 		break;
 	}while(true);
+	return s1;	
+}
+
+int main()
+{
+	SLL<> s1=enterValue(0);
 	return 0;
 }

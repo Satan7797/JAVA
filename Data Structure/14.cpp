@@ -162,7 +162,7 @@ OrderedList enterValuesInList(int k){
 			cout<<"\nMerging "<<k;
 			OrderedList sol1=enterValuesInList(k+1);
 			sol.merge(sol1);
-			cout<<"\nOut from merge "<<k<<endl;
+			cout<<"\nEnd of merge "<<k<<endl;
 		}else if(choice=='d'){
 			sol.display();
 		}else if(choice=='e')

@@ -4,12 +4,12 @@ using namespace std;
 class node
 {
 	public:
-		int info;
+	  	int info;
 		node *next;
 		node(int i,node *n=NULL)
 		{
 			info=i;
-			next=n;
+			next=next;
 		}
 };
 
@@ -19,14 +19,13 @@ class queue
 	public:
 		queue()
 		{
-			front=rear=NULL;
+		    front=rear=NULL;
 		}
-		
+
 		bool isEmpty()
 		{
 			return front==NULL;
 		}
-		
 		void enqueue(int);
 		void dequeue();
 		void display();
@@ -34,51 +33,74 @@ class queue
 
 void queue::enqueue(int x)
 {
-	if(isEmpty())
-	{
-		front=rear=new node(x);
-		return;
+    if(!isEmpty())
+    {
+	  node *temp=new node(x);
+	  rear->next=temp;
+	  rear=temp;
 	}
-	node *temp=new node(x);
-	rear->next=temp;
-	rear=temp;
+	else
+	front=rear=new node(x);
 }
 
 void queue::dequeue()
 {
-	if(!isEmpty())
+	if(isEmpty())
 	{
-		cout<<"\nRemoving "<<front->info<<endl;
-		node *temp=front->next;
-		delete front;
-		front=temp;
+		cout<<"\nQueue is empty";
+		return;
 	}
-	else
-	cout<<"\nQueue is Empty";
+	
+	int d=front->info;
+	node *temp=front;
+	delete front;
+	front=temp->next;
+	cout<<"\nElement removed: "<<d;
 }
+
 void queue::display()
 {
-	if(!isEmpty())
+	if(isEmpty())
 	{
-		node *temp=front;
-		while(temp!=NULL)
-		{
-			cout<<temp->info<<" ";
-			temp=temp->next;
-		}
+		cout<<"\nQueue is empty";
+		return;
 	}
-	else
-	cout<<"\nQueue is empty";
+	
+	cout<<"\nQueue: ";
+	node *temp=front;
+	while(temp!=NULL)
+	{
+		cout<<temp->info<<" ";
+		temp=temp->next;
+	}
 }
 
 int main()
 {
-	queue q;
-	q.enqueue(1);
-	q.enqueue(2);
-	q.display();
-//	q.dequeue();
-	q.dequeue();
-	q.display();
+    queue q;
+    char ch;
+    do
+    {
+    	cout<<"\na) Enqueue";
+    	cout<<"\nb) Dequeue";
+   		cout<<"\nc) Display";
+    	cout<<"\nd) Exit";
+    	cout<<"\nEnter your choice: ";
+    	cin>>ch;   
+    	if(ch=='a')
+    	{
+    		int x;
+    		cout<<"\nEnter x:";
+    		cin>>x;
+    		q.enqueue(x);
+    	}
+    	else if(ch=='b')
+    		q.dequeue();
+    	else if(ch=='c')
+    		q.display();
+    	else if(ch=='d')
+    		break;
+    }while(true);
+    
 	return 0;
 }

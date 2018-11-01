@@ -60,7 +60,7 @@ polynomial polynomial::addPolynomial(polynomial p){
 		}
 	}
 	
-	while(temp|| temp1){
+	while(temp || temp1){
 		if(temp){
 			p1.insert(temp->coeff,temp->pow);
 			temp=temp->next;
@@ -87,58 +87,43 @@ void polynomial::display(){
 	}
 }
 
-int main(){
-	char choice;
+polynomial enterValue(){
 	int coeff,pow;
+	polynomial p;
+	char choice;
+	do{
+		cout<<"\na) Insert value";
+		cout<<"\nb) Display";
+		cout<<"\nc) Stop entering values";
+		cout<<"\nEnter your choice: ";
+		cin>>choice;
+		
+		switch(choice){
+			case 'a': 
+				cout<<"\nEnter coefficient and power: ";
+				cin>>coeff>>pow;
+				p.insert(coeff,pow);
+				break;
+			case 'b':
+				cout<<"\nPolynomial is: ";
+				p.display();
+				break;
+		}
+		
+		if(choice=='c')
+		break;
+	}while(true);
+	return p;
+}
+
+int main(){
 	polynomial p1,p2,p;
 	cout<<"\nAdding two polynomials using linked list:-";
 	cout<<"\nEnter values for first polynomial: ";
-	do{
-		cout<<"\na) Insert value";
-		cout<<"\nb) Display";
-		cout<<"\nc) Stop entering values";
-		cout<<"\nEnter your choice: ";
-		cin>>choice;
-		
-		switch(choice){
-			case 'a': 
-				cout<<"\nEnter coefficient and power: ";
-				cin>>coeff>>pow;
-				p1.insert(coeff,pow);
-				break;
-			case 'b':
-				cout<<"\nPolynomial is: ";
-				p1.display();
-				break;
-		}
-		
-		if(choice=='c')
-		break;
-	}while(true);
-
+	p1=enterValue();
+	
 	cout<<"\nEnter values for second polynomial: ";
-	do{
-		cout<<"\na) Insert value";
-		cout<<"\nb) Display";
-		cout<<"\nc) Stop entering values";
-		cout<<"\nEnter your choice: ";
-		cin>>choice;
-		
-		switch(choice){
-			case 'a': 
-				cout<<"\nEnter coefficient and power: ";
-				cin>>coeff>>pow;
-				p2.insert(coeff,pow);
-				break;
-			case 'b':
-				cout<<"\nPolynomial is: ";
-				p2.display();
-				break;
-		}
-		
-		if(choice=='c')
-		break;
-	}while(true);
+	p2=enterValue();
 	
 	p=p1.addPolynomial(p2);
 	cout<<"\nSum of the polynomials is: ";
