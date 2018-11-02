@@ -1,28 +1,23 @@
 #include<iostream>
 using namespace std;
 
-void bubbleSort(int a[],int n)
-{
+void bubbleSort(int a[],int n){
 	int temp;
 	for(int i=0;i<n-1;i++)		//outer loop for pass
 		for(int j=0;j<n-1-i;j++)
-			if(a[j]>a[j+1])			//if element at j is greater than element at j+1 then swap the values
-			{
+			if(a[j]>a[j+1]){			//if element at j is greater than element at j+1 then swap the values
    			    temp=a[j];
 				a[j]=a[j+1];
 				a[j+1]=temp;
 			}		
 }
 
-void insertionSort(int a[],int n)
-{
+void insertionSort(int a[],int n){
 	int j,x;
-	for(int i=1;i<n;i++)
-	{
+	for(int i=1;i<n;i++){
 		j=i-1;
 		x = a[i];
-		while(j>=0 && a[j]>x)
-		{
+		while(j>=0 && a[j]>x){
 			a[j+1]=a[j];
 			j--;
 		}
@@ -30,18 +25,15 @@ void insertionSort(int a[],int n)
 	}	
 }
 
-void selectionSort(int a[],int n)
-{
+void selectionSort(int a[],int n){
 	int min=0,j,temp;
-	for(int i=0;i<n;i++)
-	{
+	for(int i=0;i<n;i++){
 		min=i;
 		for(j=i;j<n;j++)
 			if(a[min]>a[j])
 				min=j;
 		
-		if(min!=i)
-		{
+		if(min!=i){
 			temp=a[min];
 			a[min]=a[i];
 			a[i]=temp;
@@ -49,8 +41,7 @@ void selectionSort(int a[],int n)
 	}
 }
 
-void merge(int arr[],int l,int m,int r) 
-{ 
+void merge(int arr[],int l,int m,int r) { 
     int i,j,k; 
     int n1=m-l+1,n2=r-m; 
   
@@ -62,8 +53,7 @@ void merge(int arr[],int l,int m,int r)
     R[j]=arr[m+1+j]; 
   
     i=0,j=0,k=l; 
-    while (i<n1 && j<n2) 
-    { 
+    while (i<n1 && j<n2) { 
         if (L[i]<=R[j]) 
         arr[k]=L[i++];  
         else
@@ -71,23 +61,19 @@ void merge(int arr[],int l,int m,int r)
         k++; 
     } 
   
-    while (i<n1) 
-    { 
+    while (i<n1) { 
         arr[k]=L[i++]; 
         k++; 
     } 
   
-    while (j<n2) 
-    { 
+    while (j<n2) { 
         arr[k]=R[j++]; 
         k++; 
     } 
 } 
   
-void mergeSort(int arr[],int l,int r) 
-{ 
-    if (l<r) 
-    { 
+void mergeSort(int arr[],int l,int r) { 
+    if (l<r) { 
         int m=l+(r-l)/2; 
   
         mergeSort(arr,l,m); 
@@ -97,15 +83,12 @@ void mergeSort(int arr[],int l,int r)
     } 
 } 
 
-int partition(int arr[],int l,int r) 
-{ 
+int partition(int arr[],int l,int r) { 
     int pivot=arr[r];  
     int i=(l-1),temp;   
   
-    for (int j=l;j<=r-1;j++) 
-    { 
-        if (arr[j]<=pivot) 
-        { 
+    for (int j=l;j<=r-1;j++) { 
+        if (arr[j]<=pivot) { 
             i++;    
 			temp=arr[i];
 			arr[i]=arr[j];
@@ -118,10 +101,8 @@ int partition(int arr[],int l,int r)
     return i+1; 
 } 
   
-void quickSort(int arr[],int l,int r) 
-{ 
-    if (l<r) 
-    { 
+void quickSort(int arr[],int l,int r) { 
+    if (l<r){ 
         int pi=partition(arr,l,r); 
   
         quickSort(arr,l,pi-1); 
@@ -129,14 +110,12 @@ void quickSort(int arr[],int l,int r)
     } 
 }
 
-int linearSearch(int a[],int x)
-{
+int linearSearch(int a[],int x){
 	int size=sizeof(a)/sizeof(a[0]);
 	int pass=0,i;
 	
 	for(i=0;i<size;i++)
-	if(a[i]==x)
-	{
+	if(a[i]==x){
 		pass=1;
 		break;
 	}
@@ -146,18 +125,16 @@ int linearSearch(int a[],int x)
 	return -1;
 }
 
-int binarySearch(int a[],int first,int last,int x)
-{
-	if(first<=last)
-	{
+int binarySearch(int a[],int first,int last,int x){
+	if(first<=last){
 		int mid=(first+last)/2;
 
 		if(a[mid]==x)
 			return mid;
 		else if(a[mid]>x)
-			return binarySearch(a,first,mid,x);
+			return binarySearch(a,first,mid-1,x);
 		else if(a[mid]<x)
-			return binarySearch(a,mid,last,x);
+			return binarySearch(a,mid+1,last,x);
 	}
 	return -1;
 }
@@ -167,8 +144,8 @@ void array(int a[],int size)
 	cout<<"\nArray is: ";
 	for(int i=0;i<size;cout<<a[i++]<<" ");
 }
-int main()
-{
+
+int main(){
 	int n,x;
 	cout<<"Enter size of array: ";
 	cin>>n;
@@ -178,8 +155,7 @@ int main()
 	for(int i=0;i<n;cin>>a[i],i++);
 	
 	char choice;
-	do
-	{
+	do{
 		cout<<"\na) Bubble Sort";
 		cout<<"\nb) Insertion Sort";
 		cout<<"\nc) Selection";
@@ -192,38 +168,27 @@ int main()
 		cout<<"\nEnter your choice: ";
 		cin>>choice;
 		
-		if(choice=='h')
-		{
+		if(choice=='h'){
 			cout<<"\nEnter array: ";
 			for(int i=0;i<n;cin>>a[i],i++);
 		}
-		if(choice=='a')
-		{
+		
+		if(choice=='a'){
 			bubbleSort(a,n);
 			array(a,n);
-		}
-		else if(choice=='b')
-		{
+		}else if(choice=='b'){
 			insertionSort(a,n);
 			array(a,n);
-		}
-		else if(choice=='c')
-		{
+		}else if(choice=='c'){
 			selectionSort(a,n);
 			array(a,n);
-		}
-		else if(choice=='d')
-		{
+		}else if(choice=='d'){
 			mergeSort(a,0,n-1);
 			array(a,n);
-		}
-		else if(choice=='e')
-		{
+		}else if(choice=='e'){
 			quickSort(a,0,n-1);
 			array(a,n);
-		}
-		else if(choice=='f')
-		{
+		}else if(choice=='f')
 			cout<<"\nEnter the number you want to search: ";
 			cin>>x;
 			x=linearSearch(a,x);
@@ -231,9 +196,7 @@ int main()
 			cout<<"\nNot found in array";
 			else
 			cout<<"\nFound at: "<<x;
-		}
-		else if(choice=='g')
-		{
+		}else if(choice=='g'){
 			cout<<"\nEnter the number you want to search: ";
 			cin>>x;
 			x=binarySearch(a,0,n,x);
