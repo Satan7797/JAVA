@@ -2,26 +2,30 @@
 using namespace std;
 
 template<class T>
-class node{
+class node
+{
 	public:
 	  	T info;
 		node<T> *next;
 		node<T>(T i,node<T> *n=NULL)
 		{
 			info=i;
-			next=next;
+			next=n;
 		}
 };
 
 template<class T>
-class Queue{
+class Queue
+{
 	node<T> *front,*rear;
 	public:
-		Queue<T>(){
+		Queue<T>()
+		{
 		    front=rear=NULL;
 		}
 
-		bool isEmpty(){
+		bool isEmpty()
+		{
 			return front==NULL;
 		}
 		void enqueue(T);
@@ -29,7 +33,8 @@ class Queue{
 };
 
 template<class T>
-void Queue<T>::enqueue(T x){
+void Queue<T>::enqueue(T x)
+{
     if(!isEmpty())
     {
 	  node<T> *temp=new node<T>(x);
@@ -50,7 +55,9 @@ T Queue<T>::dequeue(){
 	
 	node<T> *temp=front;
 	front=temp->next;
-	return temp->info;
+	T returnValue=temp->info;
+	delete temp;
+	return returnValue;
 }
 
 class BSTNode{
@@ -144,19 +151,20 @@ int BST::heightOfTree(BSTNode *p){
 
 void BST::levelByLevel(){
 	Queue<BSTNode*> q;
-	BSTNode *p=root;
-
-	if(p!=NULL){
-		q.enqueue(p);
-
+			
+	BSTNode *temp=root;
+	if(temp!=NULL){
+		q.enqueue(temp);
 		while(!q.isEmpty()){
-			p=q.dequeue();
-			cout<<p->data<<" ";
-			cout<<"\n";
-			if(p->left!=NULL)
-			q.enqueue(p->left);
-			if(p->right!=NULL)
-			q.enqueue(p->right);
+			temp=q.dequeue();
+			cout<<temp->data<<" ";
+			if(temp->left!=NULL){
+				q.enqueue(temp->left);
+			}
+					
+			if(temp->right!=NULL){
+				q.enqueue(temp->right);
+			}
 		}
 	}
 }
@@ -172,22 +180,27 @@ void BST::searchKey(BSTNode *&curr, int key, BSTNode *&parent){
 }
 
 void BST::insert(int x){
-	BSTNode *p=root,*prev=NULL;
-	
-	while(p!=NULL){
-		prev=p;
-		if(p->data < x)
-			p=p->right;
-		else
-			p=p->left;
+	BSTNode *prev=NULL;
+	BSTNode *curr=root;
+			
+	if(root==NULL){
+		root=new BSTNode(x);
+		return;
 	}
-	
-	if(root == NULL)
-	root= new BSTNode(x);
-	else if(prev->data < x)
-	prev->right=new BSTNode(x);
-	else
-	prev->left = new BSTNode(x);
+	while(curr!=NULL){
+		prev=curr;
+		if(curr->data < x){
+			curr=curr->right;
+		}else{
+			curr=curr->left;
+		}
+	}
+			
+	if(prev->data > x){
+		prev->left=new BSTNode(x);
+	}else{
+		prev->right=new BSTNode(x);
+	}
 }
 
 void BST::deletionByCopying(int key){
