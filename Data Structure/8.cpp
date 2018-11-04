@@ -81,6 +81,8 @@ int main()
 		carry/=10;
 	}
 	
+	if(carry!=0)
+	s3.push(carry);
 	cout<<"\nSum: ";
 	s3.display();
 	return 0;

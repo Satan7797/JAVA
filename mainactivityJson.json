@@ -54,6 +54,36 @@
                "aim":"Singly Linked List",
                "program":"Program 10",
                "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/10.cpp"
+            },
+            {
+               "aim":"Doubly Linked List",
+               "program":"Program 11",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/11.cpp"
+            },
+            {
+               "aim":"Circular Linked List",
+               "program":"Program 12",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/12.cpp"
+            },
+            {
+               "aim":"Adding polynomials using linked list",
+               "program":"Program 13",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/13.cpp"
+            },
+            {
+               "aim":"Ordered Linked List",
+               "program":"Program 14",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/14.cpp"
+            },
+            {
+               "aim":"Binary Search Tree",
+               "program":"Program 15",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/15.cpp"
+            },
+            {
+               "aim":"Sorting and Searching",
+               "program":"Program 16",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/16.cpp"
             }
          ]
      },
