@@ -1,31 +1,32 @@
 #include<iostream>
+#include<windows.h>
 using namespace std;
 
+void gotoxy(short x, short y) {
+	COORD pos = {x, y};
+	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+}
+
 template<class T>
-class node
-{
+class node{
 	public:
 	  	T info;
 		node<T> *next;
-		node<T>(T i,node<T> *n=NULL)
-		{
+		node<T>(T i,node<T> *n=NULL){
 			info=i;
 			next=n;
 		}
 };
 
 template<class T>
-class Queue
-{
+class Queue{
 	node<T> *front,*rear;
 	public:
-		Queue<T>()
-		{
+		Queue<T>(){
 		    front=rear=NULL;
 		}
 
-		bool isEmpty()
-		{
+		bool isEmpty(){
 			return front==NULL;
 		}
 		void enqueue(T);
@@ -33,10 +34,8 @@ class Queue
 };
 
 template<class T>
-void Queue<T>::enqueue(T x)
-{
-    if(!isEmpty())
-    {
+void Queue<T>::enqueue(T x){
+    if(!isEmpty()){
 	  node<T> *temp=new node<T>(x);
 	  rear->next=temp;
 	  rear=temp;
@@ -47,8 +46,7 @@ void Queue<T>::enqueue(T x)
 
 template<class T>
 T Queue<T>::dequeue(){
-	if(isEmpty())
-	{
+	if(isEmpty()){
 		cout<<"\nQueue is empty";
 		return NULL;
 	}
@@ -86,16 +84,28 @@ class BST{
 		
 		void inOrder(BSTNode*);
 		void inOrder(){
+			if(root==NULL){
+				cout<<"\nEmpty tree";
+				return;
+			}
 			inOrder(root);
 		}
 		
 		void preOrder(BSTNode*);
 		void preOrder(){
+			if(root==NULL){
+				cout<<"\nEmpty tree";
+				return;
+			}
 			preOrder(root);
 		}
 		
 		void postOrder(BSTNode*);
 		void postOrder(){
+			if(root==NULL){
+				cout<<"\nEmpty tree";
+				return;
+			}
 			postOrder(root);
 		}
 		
@@ -151,7 +161,12 @@ int BST::heightOfTree(BSTNode *p){
 
 void BST::levelByLevel(){
 	Queue<BSTNode*> q;
-			
+	
+	if(root==NULL){
+		cout<<"\nEmpty tree\n";
+		return;
+	}		
+	cout<<"\n";
 	BSTNode *temp=root;
 	if(temp!=NULL){
 		q.enqueue(temp);
@@ -220,11 +235,14 @@ void BST::deletionByCopying(int key){
 		else if(curr==parent->right)
 		parent->right=NULL;
 	}
-	else if(curr->right==NULL)
-		curr=curr->left;
-	else if(curr->left==NULL)
-		curr=curr->right;
-	else{
+	else if(curr->left==NULL || curr->right==NULL){
+		BSTNode *child=curr->left?curr->left:curr->right;
+		curr->data=child->data;
+		curr->left=NULL;
+		curr->right=NULL;
+		delete child;
+		return;
+	}else{
 	    temp=curr->left;
 		previous=curr;
 		while(temp->right!=NULL){
@@ -337,23 +355,25 @@ void BST::postOrder(BSTNode *v){
 
 int main(){
 	BST bst;
-//	bst.insert(82);
-//	bst.insert(69);
-//	bst.insert(51);
-//	bst.insert(40);
-//	bst.insert(20);
-//	bst.insert(41);
-//	bst.insert(68);
-//	bst.insert(75);
-//	bst.insert(73);
-//	bst.insert(80);
-//	bst.insert(96);
-//	bst.insert(85);
-//	bst.insert(100);
-//	bst.insert(97);
-//	bst.insert(105);
-//	bst.insert(103);
-//	bst.insert(110);
+	
+	bst.insert(82);
+	bst.insert(69);
+	bst.insert(51);
+	bst.insert(40);
+	bst.insert(20);
+	bst.insert(41);
+	bst.insert(68);
+	bst.insert(75);
+	bst.insert(73);
+	bst.insert(80);
+	bst.insert(96);
+	bst.insert(85);
+	bst.insert(100);
+	bst.insert(97);
+	bst.insert(105);
+	bst.insert(103);
+	bst.insert(110);
+	
 	char choice;
 	do{
 		cout<<"\na) Insert";
@@ -411,5 +431,6 @@ int main(){
 			break;
 		}
 	}while(true);
+	
 	return 0;
 }
