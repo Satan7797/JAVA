@@ -110,8 +110,11 @@ void OrderedList::deleteNode(){
 		deleteTail();
 		else{
 			node *temp=head->next,*prev=head;
-			for(;temp->info!=x;temp=temp->next,prev=prev->next);
+			for(;temp->info!=x && temp->next!=NULL ;temp=temp->next,prev=prev->next);
+			if(temp->info==x)
 			prev->next=temp->next;
+			else
+			cout<<"\nNot found";
 		}
 	}
 }

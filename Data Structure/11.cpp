@@ -155,12 +155,13 @@ void SLL<T>::reverse()
 	
 	node<T> *first=head,*end=tail;
 	T temp;
-	for(;first->next!=end;first=first->next,end=end->prev)
+	for(;first!=end;first=first->next,end=end->prev)
 	{
 		temp=first->info;
 		first->info=end->info;
 		end->info=temp;
 	}
+	
 	cout<<"\nAfter reversing the list: ";
 	display();
 }

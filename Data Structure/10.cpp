@@ -171,7 +171,7 @@ void SLL<T>::reverse()
 		temp->info=end->info;
 		end->info=d;
 		
-		end=first->next;
+		end=first;
 		temp=temp->next;
 	}while(temp!=end);
 	
@@ -213,11 +213,10 @@ void SLL<T>::display()
 	}
 	
 	node<T> *temp=head;
-	do
-	{
+	while(temp!=NULL){
 		cout<<temp->info<<" ";
 		temp=temp->next;
-	}while(temp!=NULL);
+	}
 }
 
 
@@ -254,17 +253,17 @@ SLL<> enterValue(int k){
 		else if(choice=='g')
 		s1.reverse();
 		else if(choice=='h'){
-			cout<<"\nMerge from function "<<k;
+			cout<<"\nConcat from function "<<k;
 			SLL<> s=s1.concat(enterValue(k+1));
 			cout<<"\nContents of s: ";
 			s.display();
-			cout<<"\nEnd of merge "<<k;
+			cout<<"\nEnd of concat "<<k;
 		}else if(choice=='i'){
-			cout<<"\nMerge from function "<<k;
+			cout<<"\nConcat from function "<<k;
 			SLL<> s=s1.operator +(enterValue(k+1));
 			cout<<"\nContents of s: ";
 			s.display();
-			cout<<"\nEnd of merge: "<<k;
+			cout<<"\nEnd of concat: "<<k;
 		}else if(choice=='j')
 		s1.display();
 		else if(choice=='k')

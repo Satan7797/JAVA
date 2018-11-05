@@ -15,14 +15,20 @@ void reverse(char s[],int start,int end)
 	}
 	return;
 }
+
 int main()
 {
 	string s;
 	cout<<"\nEnter the string: ";
 	getline(cin,s);	
+
 	char str[s.length()+1];
-	strcpy(str,s.c_str());
+	
+	for(int i=0;i<=s.length();i++)
+	str[i]=s[i];
+	
 	reverse(str,0,strlen(str)-1);
+
 	cout<<"\nReverse of entered string is=";
 	puts(str);
 	return 0;

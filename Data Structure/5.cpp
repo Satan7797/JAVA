@@ -34,15 +34,18 @@ class stack
 			}
 			return false;
 		}
-		void push(T);
+		void push();
 		void pop();
 		void clearStack();
 		void display();
 };
 
 template<class T>
-void stack<T>::push(T x)
+void stack<T>::push()
 {
+	T x;
+	cout<<"\nEnter element to be pushed: ";
+	cin>>x;
 	cout<<"\nPushing element "<<x<<"...";
 	d[++top]=x;
 	cout<<"\nDone!\n";
@@ -87,12 +90,7 @@ int main()
 		cin>>c;
 		
 		if(c=='a'&& !s.isFull())
-		{
-			int x;
-			cout<<"\nElement to be pushed: ";
-			cin>>x;
-			s.push(x);
-		}
+			s.push();
 		else if(!s.isEmpty())
 		{
 			if(c=='b')

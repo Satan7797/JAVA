@@ -19,23 +19,56 @@ class polynomial{
 			head=tail=NULL;
 		}
 		
-		void insert(int x,int pow){
-			if(head==NULL)
-			head=tail=new node(x,pow);
-			else{
-				tail->next=new node(x,pow);
-				tail=tail->next;
-			}
+		bool isEmpty(){
+			return head==NULL;
 		}
+		void insert(int x,int pow);
 		void display();
 		node* getHead(){
 			return head;
 		}
+		bool powInList(int);
 		polynomial addPolynomial(polynomial);
+		void bubbleSort();
 };
 
-polynomial polynomial::addPolynomial(polynomial p){
+bool polynomial::powInList(int x){
+	node *temp=head;
+	for(;temp!=NULL && temp->pow!=x;temp=temp->next);
 	
+	if(temp!=NULL && temp->pow==x){
+		return true;
+	}else
+	return false;
+}
+
+void polynomial::insert(int x,int pow){
+	if(isEmpty()){
+		head=tail=new node(x,pow);
+	}else if(powInList(pow)){
+		node *temp=head;
+		for(;temp!=NULL && temp->pow!=pow ;temp=temp->next);
+		temp->coeff+=x;
+	}else{
+		if(pow>head->pow){
+			head=new node(x,pow,head);
+		}else if(pow<tail->pow){
+			node *temp=new node(x,pow);
+			tail->next=temp;
+			tail=temp;
+		}else{
+			node *curr=head;
+			node *prev=NULL;
+			while(curr!=NULL && curr->pow > pow){
+				prev=curr;
+				curr=curr->next;
+			}
+			prev->next=new node(x,pow,curr);
+		}
+	}
+}
+
+polynomial polynomial::addPolynomial(polynomial p){
 	if(head==NULL && p.getHead()==NULL){
 		cout<<"\nBoth are empty";
 		return p;
@@ -74,16 +107,17 @@ polynomial polynomial::addPolynomial(polynomial p){
 }
 
 void polynomial::display(){
-	if(head==NULL){
+	if(isEmpty()){
 		cout<<"\nEmpty";
 		return;
-	}
-	
-	node *temp=head;
-	
-	while(temp!=NULL){
-		cout<<temp->coeff<<"x^"<<temp->pow<<"+";
-		temp=temp->next;
+	}else{
+		node *temp=head;
+		while(temp!=NULL){
+			cout<<temp->coeff<<"x^"<<temp->pow;
+			temp=temp->next;
+			if(temp)
+			cout<<"+ ";
+		}
 	}
 }
 
@@ -125,6 +159,10 @@ int main(){
 	cout<<"\nEnter values for second polynomial: ";
 	p2=enterValue();
 	
+	cout<<"\nFirst polynomial: ";
+	p1.display();
+	cout<<"\nSecond polynomial: ";
+	p2.display();
 	p=p1.addPolynomial(p2);
 	cout<<"\nSum of the polynomials is: ";
 	p.display();

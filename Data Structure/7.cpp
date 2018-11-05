@@ -9,7 +9,7 @@ class node
 		node(int i,node *n=NULL)
 		{
 			info=i;
-			next=next;
+			next=n;
 		}
 };
 
@@ -33,14 +33,13 @@ class queue
 
 void queue::enqueue(int x)
 {
-    if(!isEmpty())
-    {
-	  node *temp=new node(x);
-	  rear->next=temp;
-	  rear=temp;
+    if(isEmpty()){
+    	front=rear=new node(x);
+	}else{
+		node *temp=new node(x);
+		rear->next=temp;
+		rear=temp;
 	}
-	else
-	front=rear=new node(x);
 }
 
 void queue::dequeue()
@@ -51,10 +50,10 @@ void queue::dequeue()
 		return;
 	}
 	
-	int d=front->info;
 	node *temp=front;
-	delete front;
-	front=temp->next;
+	front=front->next;
+	int d=temp->info;
+	delete temp;
 	cout<<"\nElement removed: "<<d;
 }
 
@@ -68,7 +67,7 @@ void queue::display()
 	
 	cout<<"\nQueue: ";
 	node *temp=front;
-	while(temp!=NULL)
+	while(temp!=rear->next)
 	{
 		cout<<temp->info<<" ";
 		temp=temp->next;
