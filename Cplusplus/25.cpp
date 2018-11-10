@@ -12,28 +12,35 @@ struct Student
 	char name[30];
 	int roll;
 	int marks;
+	void input()
+	{
+		cout<<"\nEnter the Name of Student: ";
+		cin.getline(name, 30);
+		cin.ignore();
+		cout<<"Enter the Roll No: ";
+		cin>>roll;
+		cout<<"\nEnter the Marks: ";
+		cin>>marks;
+		cin.get();
+	}
+	void output()
+	{
+		cout<<"\nRoll No: "<<roll;
+   	cout<<"\nName: "<<name;
+   	cout<<"\nMarks: "<<marks;
+	}
 };
 
 int main()
 {
-	Student s[10];
-	int i;
-	for (i=0;i<10;i++)
-	{	cout<<"\nDetails of Student "<<i+1<<" : ";
-		cout<<"\nEnter the Name of Student: ";
-		cin>>s[i].name;
-		cout<<"Enter the Roll No: ";
-		cin>>s[i].roll;
-		cout<<"Enter the Marks: ";
-		cin>>s[i].marks;
-	}
+	Student s[3];
 	ofstream fout("myfile.txt");
-	i=0;
-	while(i<10)
+	int i;
+	for(i=0;i<3;i++)
 	{
-		fout<<s[i].name<<s[i].roll<<s[i].marks;
-		cout<<s[i].name<<" "<<s[i].roll<<" "<<s[i].marks<<endl;
-		i++;
+		cout<<"\nDetails of Student "<<i+1<<" : ";
+		s[i].input();
+		fout.write((char *)&s[i], sizeof(s[i]));
 	}
 	fout.close();
 	return 0;
