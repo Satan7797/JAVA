@@ -9,7 +9,7 @@ using namespace std;
 
 struct Student
 {
-	string name;
+	char name[30];
 	int roll;
 	int marks;
 };
