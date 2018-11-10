@@ -1,7 +1,5 @@
-//Create a structure Student containing fields for Roll No., Name, Class, Year and Total Marks. 
-//Create 10 students and store them in a file.
+//Show The Data Stored in Previous Program (i.e Program 25)
 
-//Not sure for this one.
 
 #include<iostream>
 #include<fstream>
@@ -10,20 +8,28 @@ using namespace std;
 
 struct Student
 {
-	string name;
+	char name[30];
 	int roll;
 	int marks;
+	void output()
+	{
+		cout<<"\nName: "<<name;
+		cout<<"\nRoll No: "<<roll;
+   	cout<<"\nMarks: "<<marks;
+	}
 };
 
 int main()
 {
 	Student s[10];
-	char ch;
 	ifstream fin("myfile.txt");
-	for(int i=0;i<10;i++)
+	int i=0;
+	while(i<3)
 	{
-		fin>>s[i].name>>s[i].roll>>s[i].marks;
-		cout<<s[i].name<<" "<<s[i].roll<<" "<<s[i].marks<<endl;
+		cout<<"\n\nDetails Of Student "<<i<<" : \n";
+    fin.read((char *)&s[i], sizeof(s[i]));
+		s[i].output();
+		i++;
 	}
 	fin.close();
 	return 0;
