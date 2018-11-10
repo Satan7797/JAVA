@@ -1,4 +1,4 @@
-//Copy the contents of one text file to another file, after removing all whitespaces.
+//Reversing an array using pointers
 
 #include<iostream>
 using namespace std;
@@ -32,5 +32,3 @@ void reverse(int *f)		//function to reverse array
 		f[l]=temp;
 	}
 }
-
-
