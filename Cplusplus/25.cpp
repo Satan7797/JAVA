@@ -1,39 +1,47 @@
-//Create a structure Student containing fields for Roll No., Name, Class, Year and Total Marks. 
+//Create a structure Student containing fields for Roll No., Name, Class, Year and Total Marks.
 //Create 10 students and store them in a file.
 
-//Not sure for this one.
 
 #include<iostream>
 #include<fstream>
+
 using namespace std;
+
 struct Student
 {
-	char* name;
+	char name[30];
 	int roll;
 	int marks;
+	void input()
+	{
+		cout<<"\nEnter the Name of Student: ";
+		cin.getline(name, 30);
+		cin.ignore();
+		cout<<"Enter the Roll No: ";
+		cin>>roll;
+		cout<<"\nEnter the Marks: ";
+		cin>>marks;
+		cin.get();
+	}
+	void output()
+	{
+		cout<<"\nRoll No: "<<roll;
+   	cout<<"\nName: "<<name;
+   	cout<<"\nMarks: "<<marks;
+	}
 };
+
 int main()
 {
-	Student s[10];
- 
- 	ofstream fout;
-	fout.open("myfile.txt");
-
-	cout<<"fill details of students: \n";
-
-	for(int i=0;i<10;i++)
+	Student s[3];
+	ofstream fout("myfile.txt");
+	int i;
+	for(i=0;i<3;i++)
 	{
-		cout<<"\nname:";
-		gets(s[i].name);
-		cout<<"roll:";
-		cin>>s[i].roll;
-		cout<<"marks:";
-		cin>>s[i].marks;
-		fout<<s[i].name<<" "<<s[i].roll<<" "<<s[i].marks<<"\n";
+		cout<<"\nDetails of Student "<<i+1<<" : ";
+		s[i].input();
+		fout.write((char *)&s[i], sizeof(s[i]));
 	}
-
 	fout.close();
-
 	return 0;
 }
-
