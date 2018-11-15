@@ -74,24 +74,8 @@ polynomial polynomial::addPolynomial(polynomial p){
 		return p;
 	}
 	node *temp=head;
-	node *temp1=p.getHead();
+	node *temp1=p.head;
 	polynomial p1;
-	cout<<"\nAnswer is: ";
-	while(temp && temp1){
-		if(temp->pow == temp1->pow){
-			p1.insert(temp->coeff+temp1->coeff,temp->pow);
-			temp=temp->next;
-			temp1=temp1->next;
-		}
-		else if(temp->pow > temp1->pow){
-			p1.insert(temp->coeff,temp->pow);
-			temp=temp->next;
-		}
-		else if(temp->pow < temp1->pow){
-			p1.insert(temp1->coeff,temp1->pow);	
-			temp1=temp1->next;
-		}
-	}
 	
 	while(temp || temp1){
 		if(temp){
