@@ -58,42 +58,42 @@
             {
                "aim":"Part 1",
                "program":"Program 8",
-               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/OS/8-1.c"
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/OS/8-1.cpp"
             },
             {
                "aim":"Part 2",
                "program":"Program 8",
-               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/OS/8-2.c"
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/OS/8-2.cpp"
             },
             {
                "aim":"Part 3",
                "program":"Program 8",
-               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/OS/8-3.c"
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/OS/8-3.cpp"
             },
             {
                "aim":"Part 4",
                "program":"Program 8",
-               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/OS/8-4.c"
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/OS/8-4.cpp"
             },
             {
                "aim":"Part 6",
                "program":"Program 8",
-               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/OS/8-6.c"
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/OS/8-6.cpp"
             },
             {
                "aim":"First Fit",
                "program":"Program 9",
-               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/OS/9-2.c"
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/OS/9-2.cpp"
             },
             {
                "aim":"Best Fit",
                "program":"Program 9",
-               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/OS/9-1.c"
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/OS/9-1.cpp"
             },
             {
                "aim":"Worst Fit",
                "program":"Program 9",
-               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/OS/9-3.c"
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/OS/9-3.cpp"
             }
          ]
       },
