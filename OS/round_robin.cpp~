@@ -1,0 +1,47 @@
+#include<iostream>
+using namespace std;
+
+bool allZero(int a[],int size)
+{
+	for(int i=0;i<size;i++)
+	if(a[i]>0)
+	return false;
+	return true;
+}
+
+int main()
+{
+	int process_number;
+	cout<<"\nEnter number of processes: ";
+	cin>>process_number;
+	
+	int process[process_number];
+	
+	cout<<"\nEnter time required for processes: ";
+	for(int i=0;i<process_number;cin>>process[i],i++);
+	
+	int time_quantum;
+	cout<<"\nEnter time quantum: ";
+	cin>>time_quantum;
+	
+	for(int i=0;i>process_number;i++)
+	{	
+	cout<<"\nCheck1";
+		if(process[i]>=time_quantum)
+		{
+			cout<<"\nCheck0";
+			process[i]=process[i]-time_quantum;
+		}
+		else if(process[i]<time_quantum)
+		{
+			cout<<"\nCheck3";
+			process[i]=0;
+		}
+	}
+	
+	cout<<"\nFinal array: ";
+	for(int i=0;i<process_number;i++)
+	cout<<process[i]<<" ";
+	
+	return 0;
+}
