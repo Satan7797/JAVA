@@ -1,7 +1,103 @@
 {
    "type":"MainactivityCollection",
    "mainlist":[
-     {
+      {
+         "topic":"Practical Solution:",
+         "subject":"Operating System",
+         "list":[
+            {
+               "aim":"System information",
+               "program":"Program 1",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/OS/1.c"
+            },
+            {
+               "aim":"File information",
+               "program":"Program 2",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/OS/2.c"
+            },
+            {
+               "aim":"Copy contents from one file to other",
+               "program":"Program 3",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/OS/3.c"
+            },
+            {
+               "aim":"Part 1",
+               "program":"Program 4",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/OS/4-1.c"
+            },
+            {
+               "aim":"Part 2",
+               "program":"Program 4",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/OS/4-2.c"
+            },
+            {
+               "aim":"Part 3",
+               "program":"Program 4",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/OS/4-3.c"
+            },
+            {
+               "aim":"Shared Memory Producer",
+               "program":"Program 5",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/OS/5p.c"
+            },
+            {
+               "aim":"Shared Memory Consumer",
+               "program":"Program 5",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/OS/5c.c"
+            },
+            {
+               "aim":"IPC",
+               "program":"Program 6",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/OS/6.c"
+            },
+            {
+               "aim":"Pthread lib",
+               "program":"Program 7",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/OS/7.c"
+            },
+            {
+               "aim":"Part 1",
+               "program":"Program 8",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/OS/8-1.c"
+            },
+            {
+               "aim":"Part 2",
+               "program":"Program 8",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/OS/8-2.c"
+            },
+            {
+               "aim":"Part 3",
+               "program":"Program 8",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/OS/8-3.c"
+            },
+            {
+               "aim":"Part 4",
+               "program":"Program 8",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/OS/8-4.c"
+            },
+            {
+               "aim":"Part 6",
+               "program":"Program 8",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/OS/8-6.c"
+            },
+            {
+               "aim":"First Fit",
+               "program":"Program 9",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/OS/9-2.c"
+            },
+            {
+               "aim":"Best Fit",
+               "program":"Program 9",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/OS/9-1.c"
+            },
+            {
+               "aim":"Worst Fit",
+               "program":"Program 9",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/OS/9-3.c"
+            }
+         ]
+      },
+      {
          "topic":"Practical Solution:",
          "subject":"Data Structure",
          "list":[
@@ -40,12 +136,12 @@
                "program":"Program 7",
                "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/7.cpp"
             },
-	    {
+            {
                "aim":"Adding numbers using Stack",
                "program":"Program 8",
                "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/8.cpp"
             },
-	    {
+            {
                "aim":"Evaluating postfix Expression",
                "program":"Program 9",
                "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/9.cpp"
@@ -86,8 +182,8 @@
                "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Data%20Structure/16.cpp"
             }
          ]
-     },
-     {
+      },
+      {
          "topic":"Practical Solution:",
          "subject":"Java",
          "list":[
