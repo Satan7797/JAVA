@@ -16,8 +16,7 @@ int main()
 	cout<<"\nEnter m: ";
 	cin>>m;
 	
-	int data[m]={1,0,1,1,0,0,1};
-	
+	int data[m];
 	cout<<"\nEnter data: ";
 	for(int i=0;i<m;cin>>data[i],i++);
 	
@@ -57,6 +56,6 @@ int main()
 	for(int i=0;i<sd;i++)
     if(!posCheck(i+1,r))
 	cout<<dataSent[i];
-		
+	
 	return 0;
 }
