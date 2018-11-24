@@ -4,7 +4,7 @@ using namespace std;
 
 bool posCheck(int i,int r)
 {
-	for(int j=0;j<=r;j++)
+	for(int j=0;j<r;j++)
 	if(i==pow(2,j))
 	return false;
 	return true;
