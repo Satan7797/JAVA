@@ -3,6 +3,37 @@
    "mainlist":[
       {
          "topic":"Practical Solution:",
+         "subject":"Computer Network",
+         "list":[
+            {
+               "aim":"CRC",
+               "program":"Program 1",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Network/crc.cpp"
+            },
+            {
+               "aim":"Hamming Code",
+               "program":"Program 2",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Network/HammingCodeFinal.cpp"
+            },
+            {
+               "aim":"Stop and Wait ARQ",
+               "program":"Program 3",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Network/SW.cpp"
+            },
+            {
+               "aim":"Go Back N Sliding Window",
+               "program":"Program 4",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Network/goBack.cpp"
+            },
+            {
+               "aim":"Selective Repeat",
+               "program":"Program 5",
+               "url":"https://raw.githubusercontent.com/Satan7797/JAVA/master/Network/selRepeat.cpp"
+            }
+         ]
+      },
+      {
+         "topic":"Practical Solution:",
          "subject":"Operating System",
          "list":[
             {
