@@ -15,7 +15,7 @@
         $valid=false;
         $dbusername = "root";
         $dbserver = "localhost";
-        $dbpassword = "slimeSage@7797";
+        $dbpassword = "";
         $db = "login1";
         $conn = new mysqli($dbserver,$dbusername,$dbpassword,$db);
         
